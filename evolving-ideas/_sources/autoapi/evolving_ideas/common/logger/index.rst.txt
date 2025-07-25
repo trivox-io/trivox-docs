@@ -1,0 +1,67 @@
+evolving_ideas.common.logger
+============================
+
+.. py:module:: evolving_ideas.common.logger
+
+.. autoapi-nested-parse::
+
+   evolving_ideas.common.logger
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   evolving_ideas.common.logger.ColorFormatter
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   evolving_ideas.common.logger.setup_logging
+
+
+Module Contents
+---------------
+
+.. py:class:: ColorFormatter(fmt=None, datefmt=None, style='%', validate=True)
+
+   Bases: :py:obj:`logging.Formatter`
+
+
+   Custom formatter to add colors to log messages.
+
+
+   .. py:attribute:: COLORS
+
+
+   .. py:attribute:: RESET
+      :value: '\x1b[0m'
+
+
+
+   .. py:method:: format(record)
+
+      Format the specified record as text.
+
+      The record's attribute dictionary is used as the operand to a
+      string formatting operation which yields the returned string.
+      Before formatting the dictionary, a couple of preparatory steps
+      are carried out. The message attribute of the record is computed
+      using LogRecord.getMessage(). If the formatting string uses the
+      time (as determined by a call to usesTime(), formatTime() is
+      called to format the event time. If there is exception information,
+      it is formatted using formatException() and appended to the message.
+
+
+
+.. py:function:: setup_logging(level=logging.DEBUG, silence_third_party: bool = True)
+
+   Initialize logging with color formatter and dynamic module names.
+   Call once during startup.
+
+

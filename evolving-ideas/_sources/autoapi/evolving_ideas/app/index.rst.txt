@@ -1,0 +1,91 @@
+evolving_ideas.app
+==================
+
+.. py:module:: evolving_ideas.app
+
+.. autoapi-nested-parse::
+
+   evolving_ideas.app
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   evolving_ideas.app.logger
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   evolving_ideas.app.InputCollector
+   evolving_ideas.app.EvolvingIdeaApp
+
+
+Module Contents
+---------------
+
+.. py:data:: logger
+
+.. py:class:: InputCollector
+
+   Collects user inputs for the idea creation process.
+
+
+   .. py:attribute:: cache
+
+
+   .. py:method:: collect() -> dict
+
+      Collects user inputs for the idea.
+
+      :return: A dictionary containing the user inputs.
+      :rtype: dict
+
+
+
+.. py:class:: EvolvingIdeaApp(llm_responder: Optional[evolving_ideas.infra.responder.LLMResponder] = None)
+
+   Main application class for the Ideas app.
+
+
+   .. py:attribute:: session
+
+
+   .. py:attribute:: input_collector
+
+
+   .. py:method:: add() -> dict
+
+      Start the Ideas app.
+
+      :return: A dictionary containing the role, task, Q&A pairs, and summary of the idea.
+      :rtype: dict
+
+
+
+   .. py:method:: load(idea_id: str) -> evolving_ideas.domain.services.ide_tree.IdeaTree
+
+      Loads an idea by its ID from the repository.
+
+      :param idea_id: The unique identifier of the idea to load.
+      :type idea_id: str
+
+      :return: An IdeaTree object representing the loaded idea.
+      :rtype: IdeaTree
+
+
+
+   .. py:method:: improve(idea_id: str)
+
+      Improves an existing idea version by running a chat session to gather input.
+
+      :param idea_id: The unique identifier of the idea to improve.
+      :type idea_id: str
+
+
+

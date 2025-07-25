@@ -1,0 +1,43 @@
+evolving_ideas.strategies.router
+================================
+
+.. py:module:: evolving_ideas.strategies.router
+
+.. autoapi-nested-parse::
+
+   evolving_ideas.strategies.router
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   evolving_ideas.strategies.router.METHOD_KEYWORDS
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   evolving_ideas.strategies.router.select_method
+
+
+Module Contents
+---------------
+
+.. py:data:: METHOD_KEYWORDS
+
+.. py:function:: select_method(task: str) -> str
+
+   Selects a brainstorming method based on keywords in the task description.
+
+   :param task: The task description to analyze.
+   :type task: str
+
+   :return: The name of the selected method.
+   :rtype: str
+
+

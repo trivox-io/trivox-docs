@@ -1,0 +1,66 @@
+evolving_ideas.cli
+==================
+
+.. py:module:: evolving_ideas.cli
+
+.. autoapi-nested-parse::
+
+   evolving_ideas.cli
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   evolving_ideas.cli.VERSION
+   evolving_ideas.cli.OPENAI_API_KEY
+   evolving_ideas.cli.BANNER
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   evolving_ideas.cli.main
+
+
+Module Contents
+---------------
+
+.. py:data:: VERSION
+
+.. py:data:: OPENAI_API_KEY
+
+.. py:data:: BANNER
+   :value: Multiline-String
+
+   .. raw:: html
+
+      <details><summary>Show Value</summary>
+
+   .. code-block:: python
+
+      """
+         _____            _              _____ _     _             
+        | ____|_ ____   _(_) ___ ___    | ____| |__ (_)_ __   __ _ 
+        |  _| | '__\ \ / / |/ __/ _ \   |  _| | '_ \| | '_ \ / _` |
+        | |___| |   \ V /| | (_|  __/   | |___| | | | | | | | (_| |
+        |_____|_|    \_/ |_|\___\___|   |_____|_| |_|_|_| |_|\__, |
+                                                             |___/ 
+            A CLI to capture, evolve, and expand your ideas.
+      """
+
+   .. raw:: html
+
+      </details>
+
+
+
+.. py:function:: main()
+
+   Main entry point for the Evolving Ideas CLI.
+
+

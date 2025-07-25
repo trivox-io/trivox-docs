@@ -1,0 +1,15 @@
+evolving_ideas.sessions
+=======================
+
+.. py:module:: evolving_ideas.sessions
+
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   /autoapi/evolving_ideas/sessions/chat/index
+
+

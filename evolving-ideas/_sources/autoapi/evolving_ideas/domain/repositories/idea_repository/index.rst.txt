@@ -1,0 +1,78 @@
+evolving_ideas.domain.repositories.idea_repository
+==================================================
+
+.. py:module:: evolving_ideas.domain.repositories.idea_repository
+
+.. autoapi-nested-parse::
+
+   evolving_ideas.domain.repositories.idea_repository
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   evolving_ideas.domain.repositories.idea_repository.IdeaRepository
+
+
+Module Contents
+---------------
+
+.. py:class:: IdeaRepository(store_path: pathlib.Path)
+
+   Repository for managing ideas and their versions.
+   This class provides methods to add, load, and list ideas stored in a directory.
+
+
+   .. py:attribute:: store_path
+
+
+   .. py:method:: add(role: str, task: str, qna: List[evolving_ideas.domain.models.idea.QAPair], summary: str, author: Optional[str], method: Optional[str], method_metadata: Optional[dict]) -> evolving_ideas.domain.services.ide_tree.IdeaTree
+
+      Adds a new idea to the repository.
+
+      :param role: The role of the author (e.g., "developer", "designer").
+      :type role: str
+
+      :param task: The task or idea description.
+      :type task: str
+
+      :param qna: A list of question and answer pairs related to the idea.
+      :type qna: List[QAPair]
+
+      :param summary: A summary of the idea.
+      :type summary: str
+
+      :param author: The author of the idea (default is "santiago").
+      :type author: str
+
+      :return: An IdeaTree object representing the newly created idea.
+      :rtype: IdeaTree
+
+
+
+   .. py:method:: load(idea_id: str) -> evolving_ideas.domain.services.ide_tree.IdeaTree
+
+      Loads an idea from the repository by its ID.
+
+      :param idea_id: The unique identifier of the idea to load.
+      :type idea_id: str
+
+      :return: An IdeaTree object representing the loaded idea.
+      :rtype: IdeaTree
+
+      :raises FileNotFoundError: If the idea with the given ID does not exist.
+
+
+
+   .. py:method:: list() -> List[str]
+
+      Lists all ideas stored in the repository.
+
+      :return: A list of idea names (directories) in the store path.
+      :rtype: List[str]
+
+
+

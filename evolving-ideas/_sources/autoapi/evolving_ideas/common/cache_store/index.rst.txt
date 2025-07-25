@@ -1,0 +1,56 @@
+evolving_ideas.common.cache_store
+=================================
+
+.. py:module:: evolving_ideas.common.cache_store
+
+.. autoapi-nested-parse::
+
+   evolving_ideas.common.cache_store
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   evolving_ideas.common.cache_store.logger
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   evolving_ideas.common.cache_store.CacheStore
+
+
+Module Contents
+---------------
+
+.. py:data:: logger
+
+.. py:class:: CacheStore(path: Optional[str] = None)
+
+   A lightweight key-value cache backed by a YAML file.
+   Used for caching settings like valid API key or username.
+
+
+   .. py:attribute:: cache_path
+
+
+   .. py:method:: get(key: str, default: Any = None) -> Any
+
+
+   .. py:method:: set(key: str, value: Any)
+
+
+   .. py:method:: delete(key: str)
+
+
+   .. py:method:: all() -> dict
+
+
+   .. py:method:: clear()
+
+

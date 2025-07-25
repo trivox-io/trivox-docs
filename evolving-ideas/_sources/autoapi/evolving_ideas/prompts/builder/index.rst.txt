@@ -1,0 +1,55 @@
+evolving_ideas.prompts.builder
+==============================
+
+.. py:module:: evolving_ideas.prompts.builder
+
+.. autoapi-nested-parse::
+
+   evolving_ideas.prompts.builder
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   evolving_ideas.prompts.builder.logger
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   evolving_ideas.prompts.builder.PromptBuilder
+
+
+Module Contents
+---------------
+
+.. py:data:: logger
+
+.. py:class:: PromptBuilder(store: Optional[evolving_ideas.prompts.template_store.PromptTemplateStore] = None)
+
+   Builds prompts by formatting a named template with dynamic context.
+
+
+   .. py:attribute:: store
+
+
+   .. py:method:: build(name: str, context: dict) -> str
+
+      Build a prompt by formatting a template with the given context.
+
+      :param name: The name of the template
+      :type name: str
+
+      :param context: The context to format the template with
+      :type context: dict
+
+      :return: Formatted context
+      :rtype: str
+
+
+

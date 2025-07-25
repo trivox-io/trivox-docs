@@ -1,0 +1,17 @@
+evolving_ideas.domain
+=====================
+
+.. py:module:: evolving_ideas.domain
+
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   /autoapi/evolving_ideas/domain/models/index
+   /autoapi/evolving_ideas/domain/repositories/index
+   /autoapi/evolving_ideas/domain/services/index
+
+

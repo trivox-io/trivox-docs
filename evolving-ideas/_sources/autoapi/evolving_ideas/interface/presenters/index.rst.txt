@@ -1,0 +1,127 @@
+evolving_ideas.interface.presenters
+===================================
+
+.. py:module:: evolving_ideas.interface.presenters
+
+.. autoapi-nested-parse::
+
+   evolving_ideas.interface.presenters
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   evolving_ideas.interface.presenters.chat_logger
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   evolving_ideas.interface.presenters.ChatPresenterRoles
+   evolving_ideas.interface.presenters.ChatPresenterRoleIcons
+   evolving_ideas.interface.presenters.ChatLogger
+
+
+Module Contents
+---------------
+
+.. py:class:: ChatPresenterRoles
+
+   Bases: :py:obj:`enum.Enum`
+
+
+   Enum-like class to define roles for chat messages.
+   This class is used to categorize the roles of participants in a chat session.
+
+
+   .. py:attribute:: SYSTEM
+      :value: 'system'
+
+
+
+   .. py:attribute:: USER
+      :value: 'user'
+
+
+
+   .. py:attribute:: ASSISTANT
+      :value: 'assistant'
+
+
+
+.. py:class:: ChatPresenterRoleIcons
+
+   Bases: :py:obj:`enum.Enum`
+
+
+   Enum-like class to define icons for chat roles.
+   This class is used to represent different roles in a chat session with icons.
+
+
+   .. py:attribute:: SYSTEM
+      :value: '🧠'
+
+
+
+   .. py:attribute:: USER
+      :value: '👤'
+
+
+
+   .. py:attribute:: ASSISTANT
+      :value: '🤖'
+
+
+
+.. py:class:: ChatLogger
+
+   A class to present chat messages in a structured format.
+   This class is used to format and display chat messages in the application.
+
+
+   .. py:method:: log(message: str, role: ChatPresenterRoles = ChatPresenterRoles.USER)
+
+      Log a chat message with a specific role.
+
+      :param message: The message to log.
+      :type message: str
+
+      :param role: The role of the sender (default is "user").
+      :type role: str
+
+
+
+   .. py:method:: system(message: str)
+
+      Log a system message.
+
+      :param message: The system message to log.
+      :type message: str
+
+
+
+   .. py:method:: user(message: str)
+
+      Log a user message.
+
+      :param message: The user message to log.
+      :type message: str
+
+
+
+   .. py:method:: assistant(message: str)
+
+      Log an assistant message.
+
+      :param message: The assistant message to log.
+      :type message: str
+
+
+
+.. py:data:: chat_logger
+

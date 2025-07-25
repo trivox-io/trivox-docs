@@ -1,0 +1,24 @@
+evolving_ideas
+==============
+
+.. py:module:: evolving_ideas
+
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   /autoapi/evolving_ideas/app/index
+   /autoapi/evolving_ideas/cli/index
+   /autoapi/evolving_ideas/common/index
+   /autoapi/evolving_ideas/domain/index
+   /autoapi/evolving_ideas/infra/index
+   /autoapi/evolving_ideas/interface/index
+   /autoapi/evolving_ideas/prompts/index
+   /autoapi/evolving_ideas/sessions/index
+   /autoapi/evolving_ideas/settings/index
+   /autoapi/evolving_ideas/strategies/index
+
+

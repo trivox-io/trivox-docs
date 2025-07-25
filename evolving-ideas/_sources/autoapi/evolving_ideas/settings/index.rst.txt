@@ -1,0 +1,62 @@
+evolving_ideas.settings
+=======================
+
+.. py:module:: evolving_ideas.settings
+
+.. autoapi-nested-parse::
+
+   evolving_ideas.settings
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   evolving_ideas.settings.settings
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   evolving_ideas.settings.Settings
+
+
+Module Contents
+---------------
+
+.. py:class:: Settings
+
+   Singleton for application settings.
+   Supports .env and (future) YAML-based config.
+
+
+   .. py:method:: get(key: str, default: Optional[Any] = None) -> Any
+
+      Get a setting value by dot notation key (e.g., "openai.api_key").
+
+      :param key: Dot-separated key path.
+      :type key: str
+
+      :param default: Fallback if key is not found.
+      :type default: Optional[Any]
+
+      :return: Value or default.
+      :rtype: Any
+
+
+
+   .. py:method:: all() -> Dict[str, Any]
+
+      Get all settings as a dictionary.
+
+      :return: All settings.
+      :rtype: Dict[str, Any]
+
+
+
+.. py:data:: settings
+

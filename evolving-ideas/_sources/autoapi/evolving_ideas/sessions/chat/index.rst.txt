@@ -1,0 +1,61 @@
+evolving_ideas.sessions.chat
+============================
+
+.. py:module:: evolving_ideas.sessions.chat
+
+.. autoapi-nested-parse::
+
+   evolving_ideas.sessions.chat
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   evolving_ideas.sessions.chat.logger
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   evolving_ideas.sessions.chat.ChatSession
+
+
+Module Contents
+---------------
+
+.. py:data:: logger
+
+.. py:class:: ChatSession(llm_responder: evolving_ideas.infra.responder.LLMResponder, builder: Optional[evolving_ideas.prompts.builder.PromptBuilder] = None, chat_logger: Optional[evolving_ideas.interface.presenters.ChatLogger] = None)
+
+   Runs a single chat session for creating or improving ideas.
+
+
+   .. py:attribute:: llm_responder
+
+
+   .. py:attribute:: builder
+
+
+   .. py:attribute:: logger
+
+
+   .. py:method:: run(role: str, task: str, context: Optional[str] = None) -> dict
+
+      Runs the chat session to create or improve an idea.
+
+      :param role: The role the AI should assume (e.g., "assistant", "expert").
+      :type role: str
+
+      :param task: The task or idea the user is working on.
+      :type task: str
+
+      :return: A dictionary containing the role, task, Q&A pairs, and summary of the idea.
+      :rtype: dict
+
+
+
