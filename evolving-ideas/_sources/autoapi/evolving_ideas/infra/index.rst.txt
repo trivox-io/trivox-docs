@@ -1,0 +1,16 @@
+evolving_ideas.infra
+====================
+
+.. py:module:: evolving_ideas.infra
+
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   /autoapi/evolving_ideas/infra/open_ai_client/index
+   /autoapi/evolving_ideas/infra/responder/index
+
+

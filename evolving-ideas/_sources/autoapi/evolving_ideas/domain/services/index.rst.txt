@@ -1,0 +1,15 @@
+evolving_ideas.domain.services
+==============================
+
+.. py:module:: evolving_ideas.domain.services
+
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   /autoapi/evolving_ideas/domain/services/ide_tree/index
+
+

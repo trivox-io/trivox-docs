@@ -1,0 +1,48 @@
+evolving_ideas.prompts.template_store
+=====================================
+
+.. py:module:: evolving_ideas.prompts.template_store
+
+.. autoapi-nested-parse::
+
+   evolving_ideas.prompts.template_store
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   evolving_ideas.prompts.template_store.PromptTemplateStore
+
+
+Module Contents
+---------------
+
+.. py:class:: PromptTemplateStore
+
+   Singleton to load and cache prompt templates from YAML.
+
+
+   .. py:method:: get(name: str) -> str
+
+      Get a prompt template by name.
+
+      :param name: The name of the template
+      :type name: str
+
+      :return: The template string
+      :rtype: str
+
+
+
+   .. py:method:: all() -> dict
+
+      Get all prompt templates.
+
+      :return: All templates
+      :rtype: dict
+
+
+

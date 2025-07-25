@@ -1,0 +1,16 @@
+evolving_ideas.prompts
+======================
+
+.. py:module:: evolving_ideas.prompts
+
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   /autoapi/evolving_ideas/prompts/builder/index
+   /autoapi/evolving_ideas/prompts/template_store/index
+
+

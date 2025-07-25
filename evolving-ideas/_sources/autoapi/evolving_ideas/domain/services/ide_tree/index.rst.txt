@@ -1,0 +1,67 @@
+evolving_ideas.domain.services.ide_tree
+=======================================
+
+.. py:module:: evolving_ideas.domain.services.ide_tree
+
+.. autoapi-nested-parse::
+
+   evolving_ideas.domain.services.ide_tree.py
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   evolving_ideas.domain.services.ide_tree.IdeaTree
+
+
+Module Contents
+---------------
+
+.. py:class:: IdeaTree(idea_dir: pathlib.Path)
+
+   Represents a tree structure for an idea, including its versions and metadata.
+   This class provides methods to manage the idea's versions and metadata.
+
+
+   .. py:attribute:: idea_dir
+
+
+   .. py:attribute:: meta_path
+
+
+   .. py:attribute:: metadata
+
+
+   .. py:attribute:: versions
+
+
+   .. py:method:: add_version(version: evolving_ideas.domain.models.idea.IdeaVersion)
+
+      Adds a new version to the idea tree.
+
+      :param version: The IdeaVersion object to add.
+      :type version: IdeaVersion
+
+
+
+   .. py:method:: show_tree()
+
+      Displays the idea tree structure in a human-readable format.
+      This method prints the idea's metadata and its version tree.
+
+
+
+   .. py:method:: add_new_version(new_version: evolving_ideas.domain.models.idea.IdeaVersion)
+
+      Adds a new version to the idea tree, ensuring it does not conflict with existing versions.
+
+      :param new_version: The IdeaVersion object to add.
+      :type new_version: IdeaVersion
+
+      :raises ValueError: If the version already exists in the tree.
+
+
+

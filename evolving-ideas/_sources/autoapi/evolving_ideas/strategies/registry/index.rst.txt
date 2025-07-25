@@ -1,0 +1,52 @@
+evolving_ideas.strategies.registry
+==================================
+
+.. py:module:: evolving_ideas.strategies.registry
+
+.. autoapi-nested-parse::
+
+   evolving_ideas.strategies.registry
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   evolving_ideas.strategies.registry.Registry
+
+
+Module Contents
+---------------
+
+.. py:class:: Registry
+
+   A registry for storing and managing strategies.
+
+
+   .. py:attribute:: strategies
+
+
+   .. py:method:: register(name: str, strategy: Type)
+      :classmethod:
+
+
+      Register a new strategy.
+
+      :param name: The name of the strategy.
+      :param strategy: The strategy class.
+
+
+
+   .. py:method:: get(name: str, *args, **kwargs) -> Optional[Type]
+      :classmethod:
+
+
+      Get a registered strategy by name.
+
+      :param name: The name of the strategy.
+      :return: The strategy class or None if not found.
+
+
+
