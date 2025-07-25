@@ -2,4 +2,4 @@
 
 Explore the available documentation for Trivox modules:
 
-- [Evolving Ideas →](/evolving-ideas/)
+- [Evolving Ideas →](https://docs.trivox.io/evolving-ideas/)
