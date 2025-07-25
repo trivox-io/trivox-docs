@@ -1,8 +1,5 @@
 # Welcome to Trivox Docs
 
-```{toctree}
-:caption: Projects
-:maxdepth: 1
+Explore the available documentation for Trivox modules:
 
-evolving-ideas/index
-```
+- [Evolving Ideas →](../evolving-ideas/index.html)
