@@ -4,5 +4,5 @@
 :caption: Projects
 :maxdepth: 1
 
-evolving-ideas/source/index.md
+evolving-ideas/index
 ```
