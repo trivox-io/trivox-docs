@@ -31,6 +31,10 @@ jobs:
       - name: Add CNAME
         run: echo "docs.trivox.io" > build/html/CNAME
 
+      - name: Copy built evolving-ideas docs into build
+        run: |
+          cp -r evolving-ideas build/html/
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
