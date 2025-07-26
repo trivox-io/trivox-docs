@@ -373,11 +373,11 @@
 <tr class="row-even"><td><p><a class="reference internal" href="#evolving_ideas.strategies.ClassicMethod" title="evolving_ideas.strategies.ClassicMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClassicMethod</span></code></a></p></td>
 <td><p>A strategy for classic brainstorming techniques.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#evolving_ideas.strategies.ScamperMethod" title="evolving_ideas.strategies.ScamperMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScamperMethod</span></code></a></p></td>
-<td><p>A strategy for the SCAMPER brainstorming technique.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#evolving_ideas.strategies.Registry" title="evolving_ideas.strategies.Registry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Registry</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#evolving_ideas.strategies.Registry" title="evolving_ideas.strategies.Registry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Registry</span></code></a></p></td>
 <td><p>A registry for storing and managing strategies.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#evolving_ideas.strategies.ScamperMethod" title="evolving_ideas.strategies.ScamperMethod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScamperMethod</span></code></a></p></td>
+<td><p>A strategy for the SCAMPER brainstorming technique.</p></td>
 </tr>
 </tbody>
 </table>
@@ -471,56 +471,6 @@ for generating and evolving ideas.</p>
 </dd></dl>
 
 <dl class="py class">
-<dt class="sig sig-object py" id="evolving_ideas.strategies.ScamperMethod">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">evolving_ideas.strategies.</span></span><span class="sig-name descname"><span class="pre">ScamperMethod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">llm_responder</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../infra/responder/index.html#evolving_ideas.infra.responder.LLMResponder" title="evolving_ideas.infra.responder.LLMResponder"><span class="pre">evolving_ideas.infra.responder.LLMResponder</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">builder</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../prompts/builder/index.html#evolving_ideas.prompts.builder.PromptBuilder" title="evolving_ideas.prompts.builder.PromptBuilder"><span class="pre">evolving_ideas.prompts.builder.PromptBuilder</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chat_logger</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../interface/presenters/index.html#evolving_ideas.interface.presenters.ChatLogger" title="evolving_ideas.interface.presenters.ChatLogger"><span class="pre">evolving_ideas.interface.presenters.ChatLogger</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#evolving_ideas.strategies.ScamperMethod" title="Link to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="base/index.html#evolving_ideas.strategies.base.MethodStrategy" title="evolving_ideas.strategies.base.MethodStrategy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">evolving_ideas.strategies.base.MethodStrategy</span></code></a></p>
-<p>A strategy for the SCAMPER brainstorming technique.</p>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="evolving_ideas.strategies.ScamperMethod.SCAMPER_STEPS">
-<span class="sig-name descname"><span class="pre">SCAMPER_STEPS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['Substitute',</span> <span class="pre">'Combine',</span> <span class="pre">'Adapt',</span> <span class="pre">'Modify',</span> <span class="pre">'Put</span> <span class="pre">to</span> <span class="pre">another</span> <span class="pre">use',</span> <span class="pre">'Eliminate',</span> <span class="pre">'Reverse']</span></em><a class="headerlink" href="#evolving_ideas.strategies.ScamperMethod.SCAMPER_STEPS" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="evolving_ideas.strategies.ScamperMethod.run">
-<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">role</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#evolving_ideas.strategies.ScamperMethod.run" title="Link to this definition">¶</a></dt>
-<dd><p>Abstract method to run the strategy with the given parameters.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>role</strong> (<em>str</em>) – The role of the AI.</p></li>
-<li><p><strong>task</strong> (<em>str</em>) – The task to be performed.</p></li>
-<li><p><strong>context</strong> (<em>str</em>) – Context for the idea.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A dictionary containing the results of the strategy.</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>dict</p>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="evolving_ideas.strategies.select_method">
-<span class="sig-prename descclassname"><span class="pre">evolving_ideas.strategies.</span></span><span class="sig-name descname"><span class="pre">select_method</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#evolving_ideas.strategies.select_method" title="Link to this definition">¶</a></dt>
-<dd><p>Selects a brainstorming method based on keywords in the task description.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>task</strong> (<em>str</em>) – The task description to analyze.</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The name of the selected method.</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>str</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
 <dt class="sig sig-object py" id="evolving_ideas.strategies.Registry">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">evolving_ideas.strategies.</span></span><span class="sig-name descname"><span class="pre">Registry</span></span><a class="headerlink" href="#evolving_ideas.strategies.Registry" title="Link to this definition">¶</a></dt>
 <dd><p>A registry for storing and managing strategies.</p>
@@ -553,6 +503,56 @@ for generating and evolving ideas.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The strategy class or None if not found.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="evolving_ideas.strategies.select_method">
+<span class="sig-prename descclassname"><span class="pre">evolving_ideas.strategies.</span></span><span class="sig-name descname"><span class="pre">select_method</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#evolving_ideas.strategies.select_method" title="Link to this definition">¶</a></dt>
+<dd><p>Selects a brainstorming method based on keywords in the task description.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>task</strong> (<em>str</em>) – The task description to analyze.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The name of the selected method.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="evolving_ideas.strategies.ScamperMethod">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">evolving_ideas.strategies.</span></span><span class="sig-name descname"><span class="pre">ScamperMethod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">llm_responder</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../infra/responder/index.html#evolving_ideas.infra.responder.LLMResponder" title="evolving_ideas.infra.responder.LLMResponder"><span class="pre">evolving_ideas.infra.responder.LLMResponder</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">builder</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../prompts/builder/index.html#evolving_ideas.prompts.builder.PromptBuilder" title="evolving_ideas.prompts.builder.PromptBuilder"><span class="pre">evolving_ideas.prompts.builder.PromptBuilder</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chat_logger</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../interface/presenters/index.html#evolving_ideas.interface.presenters.ChatLogger" title="evolving_ideas.interface.presenters.ChatLogger"><span class="pre">evolving_ideas.interface.presenters.ChatLogger</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#evolving_ideas.strategies.ScamperMethod" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="base/index.html#evolving_ideas.strategies.base.MethodStrategy" title="evolving_ideas.strategies.base.MethodStrategy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">evolving_ideas.strategies.base.MethodStrategy</span></code></a></p>
+<p>A strategy for the SCAMPER brainstorming technique.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="evolving_ideas.strategies.ScamperMethod.SCAMPER_STEPS">
+<span class="sig-name descname"><span class="pre">SCAMPER_STEPS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['Substitute',</span> <span class="pre">'Combine',</span> <span class="pre">'Adapt',</span> <span class="pre">'Modify',</span> <span class="pre">'Put</span> <span class="pre">to</span> <span class="pre">another</span> <span class="pre">use',</span> <span class="pre">'Eliminate',</span> <span class="pre">'Reverse']</span></em><a class="headerlink" href="#evolving_ideas.strategies.ScamperMethod.SCAMPER_STEPS" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="evolving_ideas.strategies.ScamperMethod.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">role</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#evolving_ideas.strategies.ScamperMethod.run" title="Link to this definition">¶</a></dt>
+<dd><p>Abstract method to run the strategy with the given parameters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>role</strong> (<em>str</em>) – The role of the AI.</p></li>
+<li><p><strong>task</strong> (<em>str</em>) – The task to be performed.</p></li>
+<li><p><strong>context</strong> (<em>str</em>) – Context for the idea.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dictionary containing the results of the strategy.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
 </dd>
 </dl>
 </dd></dl>
@@ -637,16 +637,16 @@ for generating and evolving ideas.</p>
 <li><a class="reference internal" href="#evolving_ideas.strategies.ClassicMethod.run"><code class="docutils literal notranslate"><span class="pre">ClassicMethod.run()</span></code></a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#evolving_ideas.strategies.ScamperMethod"><code class="docutils literal notranslate"><span class="pre">ScamperMethod</span></code></a><ul>
-<li><a class="reference internal" href="#evolving_ideas.strategies.ScamperMethod.SCAMPER_STEPS"><code class="docutils literal notranslate"><span class="pre">ScamperMethod.SCAMPER_STEPS</span></code></a></li>
-<li><a class="reference internal" href="#evolving_ideas.strategies.ScamperMethod.run"><code class="docutils literal notranslate"><span class="pre">ScamperMethod.run()</span></code></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#evolving_ideas.strategies.select_method"><code class="docutils literal notranslate"><span class="pre">select_method()</span></code></a></li>
 <li><a class="reference internal" href="#evolving_ideas.strategies.Registry"><code class="docutils literal notranslate"><span class="pre">Registry</span></code></a><ul>
 <li><a class="reference internal" href="#evolving_ideas.strategies.Registry.strategies"><code class="docutils literal notranslate"><span class="pre">Registry.strategies</span></code></a></li>
 <li><a class="reference internal" href="#evolving_ideas.strategies.Registry.register"><code class="docutils literal notranslate"><span class="pre">Registry.register()</span></code></a></li>
 <li><a class="reference internal" href="#evolving_ideas.strategies.Registry.get"><code class="docutils literal notranslate"><span class="pre">Registry.get()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#evolving_ideas.strategies.select_method"><code class="docutils literal notranslate"><span class="pre">select_method()</span></code></a></li>
+<li><a class="reference internal" href="#evolving_ideas.strategies.ScamperMethod"><code class="docutils literal notranslate"><span class="pre">ScamperMethod</span></code></a><ul>
+<li><a class="reference internal" href="#evolving_ideas.strategies.ScamperMethod.SCAMPER_STEPS"><code class="docutils literal notranslate"><span class="pre">ScamperMethod.SCAMPER_STEPS</span></code></a></li>
+<li><a class="reference internal" href="#evolving_ideas.strategies.ScamperMethod.run"><code class="docutils literal notranslate"><span class="pre">ScamperMethod.run()</span></code></a></li>
 </ul>
 </li>
 </ul>
