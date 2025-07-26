@@ -68,7 +68,7 @@ Module Contents
 
 
 
-   .. py:method:: load(idea_id: str) -> evolving_ideas.domain.services.ide_tree.IdeaTree
+   .. py:method:: load(idea_id: str) -> evolving_ideas.domain.services.idea_tree.IdeaTree
 
       Loads an idea by its ID from the repository.
 

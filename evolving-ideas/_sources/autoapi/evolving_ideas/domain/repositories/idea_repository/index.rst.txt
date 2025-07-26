@@ -29,7 +29,7 @@ Module Contents
    .. py:attribute:: store_path
 
 
-   .. py:method:: add(role: str, task: str, qna: List[evolving_ideas.domain.models.idea.QAPair], summary: str, author: Optional[str], method: Optional[str], method_metadata: Optional[dict]) -> evolving_ideas.domain.services.ide_tree.IdeaTree
+   .. py:method:: add(role: str, task: str, qna: List[evolving_ideas.domain.models.idea.QAPair], summary: str, author: Optional[str], method: Optional[str], method_metadata: Optional[dict]) -> evolving_ideas.domain.services.idea_tree.IdeaTree
 
       Adds a new idea to the repository.
 
@@ -53,7 +53,7 @@ Module Contents
 
 
 
-   .. py:method:: load(idea_id: str) -> evolving_ideas.domain.services.ide_tree.IdeaTree
+   .. py:method:: load(idea_id: str) -> evolving_ideas.domain.services.idea_tree.IdeaTree
 
       Loads an idea from the repository by its ID.
 
