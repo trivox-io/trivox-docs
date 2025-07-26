@@ -391,17 +391,62 @@
 </section>
 <section id="setup">
 <h2>🛠 Setup<a class="headerlink" href="#setup" title="Link to this heading">¶</a></h2>
+<p>Evolving Ideas provides a streamlined setup for Windows environments using a Makefile.</p>
 <ul class="simple">
 <li><p>Requires <strong>python&gt;=3.9&lt;=3.11</strong></p></li>
 <li><p>OpenAI API Key in .env</p></li>
 <li><p><strong>Windows only</strong> support for now</p></li>
 </ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
-.venv/Scripts/activate
-pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
-cp<span class="w"> </span>.env-example<span class="w"> </span>.env
+<section id="automated-setup-windows-only">
+<h3>✅ Automated Setup (Windows only)<a class="headerlink" href="#automated-setup-windows-only" title="Link to this heading">¶</a></h3>
+<p>If you’re on Windows and have Python 3.9–3.11 installed:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>setup
 </pre></div>
 </div>
+<p>This will:</p>
+<ul class="simple">
+<li><p>Check your Python version (must be between 3.9 and 3.11)</p></li>
+<li><p>Create a virtual environment at .venv</p></li>
+<li><p>Install all dev and docs dependencies</p></li>
+<li><p>Set up pre-commit hooks for linting and formatting</p></li>
+</ul>
+<p>After that, activate your environment with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>.venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
+</pre></div>
+</div>
+</section>
+<section id="manual-setup-linux-mac-or-fallback">
+<h3>🛠 Manual Setup (Linux/Mac or fallback)<a class="headerlink" href="#manual-setup-linux-mac-or-fallback" title="Link to this heading">¶</a></h3>
+<p>If you’re not on Windows or prefer manual steps:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create and activate the virtual environment</span>
+python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+<span class="nb">source</span><span class="w"> </span>.venv/bin/activate<span class="w">  </span><span class="c1"># or .venv\Scripts\activate on Windows</span>
+
+<span class="c1"># Install dependencies</span>
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements-dev.txt
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements-docs.txt
+
+<span class="c1"># (Optional but recommended) Set up pre-commit</span>
+pre-commit<span class="w"> </span>install
+</pre></div>
+</div>
+</section>
+<section id="pre-commit">
+<h3>✨ Pre-commit<a class="headerlink" href="#pre-commit" title="Link to this heading">¶</a></h3>
+<p>We use pre-commit to ensure consistent formatting and linting across the codebase. Hooks include:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">**isort**</span></code> (with <code class="docutils literal notranslate"><span class="pre">black</span></code> profile)</p></li>
+<li><p><strong>black</strong></p></li>
+<li><p><strong>pylint</strong> (with several warnings disabled)</p></li>
+<li><p><strong>pytest</strong></p></li>
+</ul>
+<p>To run them manually on all files:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pre-commit<span class="w"> </span>run<span class="w"> </span>--all-files
+</pre></div>
+</div>
+<p>If you skip pre-commit installation, you’ll need to run the formatters and linters manually before committing.</p>
+</section>
 </section>
 <section id="usage">
 <h2>🧪 Usage<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h2>
@@ -500,7 +545,12 @@ make.bat<span class="w"> </span>html
 <li><a class="reference internal" href="#features">🚀 Features</a></li>
 <li><a class="reference internal" href="#coming-soon">📦 Coming Soon</a></li>
 <li><a class="reference internal" href="#project-structure">📂 Project Structure</a></li>
-<li><a class="reference internal" href="#setup">🛠 Setup</a></li>
+<li><a class="reference internal" href="#setup">🛠 Setup</a><ul>
+<li><a class="reference internal" href="#automated-setup-windows-only">✅ Automated Setup (Windows only)</a></li>
+<li><a class="reference internal" href="#manual-setup-linux-mac-or-fallback">🛠 Manual Setup (Linux/Mac or fallback)</a></li>
+<li><a class="reference internal" href="#pre-commit">✨ Pre-commit</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#usage">🧪 Usage</a></li>
 <li><a class="reference internal" href="#documentation">📚 Documentation</a></li>
 <li><a class="reference internal" href="#license">📜 License</a></li>

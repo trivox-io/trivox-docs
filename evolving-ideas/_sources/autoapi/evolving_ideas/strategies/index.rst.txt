@@ -31,8 +31,8 @@ Classes
 
    evolving_ideas.strategies.MethodStrategy
    evolving_ideas.strategies.ClassicMethod
-   evolving_ideas.strategies.ScamperMethod
    evolving_ideas.strategies.Registry
+   evolving_ideas.strategies.ScamperMethod
 
 
 Functions
@@ -108,46 +108,6 @@ Package Contents
 
 
 
-.. py:class:: ScamperMethod(llm_responder: evolving_ideas.infra.responder.LLMResponder, builder: Optional[evolving_ideas.prompts.builder.PromptBuilder] = None, chat_logger: Optional[evolving_ideas.interface.presenters.ChatLogger] = None)
-
-   Bases: :py:obj:`evolving_ideas.strategies.base.MethodStrategy`
-
-
-   A strategy for the SCAMPER brainstorming technique.
-
-
-   .. py:attribute:: SCAMPER_STEPS
-      :value: ['Substitute', 'Combine', 'Adapt', 'Modify', 'Put to another use', 'Eliminate', 'Reverse']
-
-
-
-   .. py:method:: run(role: str, task: str, context: str) -> dict
-
-      Abstract method to run the strategy with the given parameters.
-
-      :param role: The role of the AI.
-      :type role: str
-      :param task: The task to be performed.
-      :type task: str
-      :param context: Context for the idea.
-      :type context: str
-
-      :return: A dictionary containing the results of the strategy.
-      :rtype: dict
-
-
-
-.. py:function:: select_method(task: str) -> str
-
-   Selects a brainstorming method based on keywords in the task description.
-
-   :param task: The task description to analyze.
-   :type task: str
-
-   :return: The name of the selected method.
-   :rtype: str
-
-
 .. py:class:: Registry
 
    A registry for storing and managing strategies.
@@ -175,6 +135,46 @@ Package Contents
 
       :param name: The name of the strategy.
       :return: The strategy class or None if not found.
+
+
+
+.. py:function:: select_method(task: str) -> str
+
+   Selects a brainstorming method based on keywords in the task description.
+
+   :param task: The task description to analyze.
+   :type task: str
+
+   :return: The name of the selected method.
+   :rtype: str
+
+
+.. py:class:: ScamperMethod(llm_responder: evolving_ideas.infra.responder.LLMResponder, builder: Optional[evolving_ideas.prompts.builder.PromptBuilder] = None, chat_logger: Optional[evolving_ideas.interface.presenters.ChatLogger] = None)
+
+   Bases: :py:obj:`evolving_ideas.strategies.base.MethodStrategy`
+
+
+   A strategy for the SCAMPER brainstorming technique.
+
+
+   .. py:attribute:: SCAMPER_STEPS
+      :value: ['Substitute', 'Combine', 'Adapt', 'Modify', 'Put to another use', 'Eliminate', 'Reverse']
+
+
+
+   .. py:method:: run(role: str, task: str, context: str) -> dict
+
+      Abstract method to run the strategy with the given parameters.
+
+      :param role: The role of the AI.
+      :type role: str
+      :param task: The task to be performed.
+      :type task: str
+      :param context: Context for the idea.
+      :type context: str
+
+      :return: A dictionary containing the results of the strategy.
+      :rtype: dict
 
 
 
