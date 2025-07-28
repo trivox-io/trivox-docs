@@ -368,7 +368,10 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="#evolving_ideas.app.InputCollector" title="evolving_ideas.app.InputCollector"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputCollector</span></code></a></p></td>
 <td><p>Collects user inputs for the idea creation process.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#evolving_ideas.app.EvolvingIdeaApp" title="evolving_ideas.app.EvolvingIdeaApp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EvolvingIdeaApp</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#evolving_ideas.app.SettingsApp" title="evolving_ideas.app.SettingsApp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SettingsApp</span></code></a></p></td>
+<td><p>Application class for managing settings.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#evolving_ideas.app.EvolvingIdeaApp" title="evolving_ideas.app.EvolvingIdeaApp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EvolvingIdeaApp</span></code></a></p></td>
 <td><p>Main application class for the Ideas app.</p></td>
 </tr>
 </tbody>
@@ -398,6 +401,31 @@
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>A dictionary containing the user inputs.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="evolving_ideas.app.SettingsApp">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">evolving_ideas.app.</span></span><span class="sig-name descname"><span class="pre">SettingsApp</span></span><a class="headerlink" href="#evolving_ideas.app.SettingsApp" title="Link to this definition">¶</a></dt>
+<dd><p>Application class for managing settings.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="evolving_ideas.app.SettingsApp.settings">
+<span class="sig-name descname"><span class="pre">settings</span></span><a class="headerlink" href="#evolving_ideas.app.SettingsApp.settings" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="evolving_ideas.app.SettingsApp.view">
+<span class="sig-name descname"><span class="pre">view</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#evolving_ideas.app.SettingsApp.view" title="Link to this definition">¶</a></dt>
+<dd><p>View current application settings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A dictionary of current settings.</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p>dict</p>
@@ -535,6 +563,11 @@
 <li><a class="reference internal" href="#evolving_ideas.app.InputCollector"><code class="docutils literal notranslate"><span class="pre">InputCollector</span></code></a><ul>
 <li><a class="reference internal" href="#evolving_ideas.app.InputCollector.cache"><code class="docutils literal notranslate"><span class="pre">InputCollector.cache</span></code></a></li>
 <li><a class="reference internal" href="#evolving_ideas.app.InputCollector.collect"><code class="docutils literal notranslate"><span class="pre">InputCollector.collect()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#evolving_ideas.app.SettingsApp"><code class="docutils literal notranslate"><span class="pre">SettingsApp</span></code></a><ul>
+<li><a class="reference internal" href="#evolving_ideas.app.SettingsApp.settings"><code class="docutils literal notranslate"><span class="pre">SettingsApp.settings</span></code></a></li>
+<li><a class="reference internal" href="#evolving_ideas.app.SettingsApp.view"><code class="docutils literal notranslate"><span class="pre">SettingsApp.view()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#evolving_ideas.app.EvolvingIdeaApp"><code class="docutils literal notranslate"><span class="pre">EvolvingIdeaApp</span></code></a><ul>
