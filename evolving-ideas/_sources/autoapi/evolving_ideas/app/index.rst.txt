@@ -23,6 +23,7 @@ Classes
 .. autoapisummary::
 
    evolving_ideas.app.InputCollector
+   evolving_ideas.app.SettingsApp
    evolving_ideas.app.EvolvingIdeaApp
 
 
@@ -44,6 +45,23 @@ Module Contents
       Collects user inputs for the idea.
 
       :return: A dictionary containing the user inputs.
+      :rtype: dict
+
+
+
+.. py:class:: SettingsApp
+
+   Application class for managing settings.
+
+
+   .. py:attribute:: settings
+
+
+   .. py:method:: view() -> dict
+
+      View current application settings.
+
+      :return: A dictionary of current settings.
       :rtype: dict
 
 
