@@ -1,0 +1,61 @@
+evolving_ideas.infra.llm_interface
+==================================
+
+.. py:module:: evolving_ideas.infra.llm_interface
+
+.. autoapi-nested-parse::
+
+   evolving_ideas.infra.llm_interface
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   evolving_ideas.infra.llm_interface.LLMInterface
+
+
+Module Contents
+---------------
+
+.. py:class:: LLMInterface
+
+   Bases: :py:obj:`abc.ABC`
+
+
+   Abstract base class for LLM interfaces.
+
+
+   .. py:method:: ask(prompt: str, context: str = 'You are a helpful assistant.') -> str
+      :abstractmethod:
+
+
+      Ask the LLM a question with a given prompt and context.
+
+      :param prompt: The prompt to send to the LLM.
+      :type prompt: str
+
+      :param context: Additional context for the LLM (default is "You are a helpful assistant.").
+      :type context: str
+
+      :return: The LLM's response.
+      :rtype: str
+
+
+
+   .. py:method:: chat(chatlog: list) -> str
+      :abstractmethod:
+
+
+      Start a chat session with the LLM.
+
+      :param chatlog: A list of messages to include in the chat context.
+      :type chatlog: list
+
+      :return: The LLM's response.
+      :rtype: str
+
+
+

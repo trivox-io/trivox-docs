@@ -1,0 +1,63 @@
+evolving_ideas.infra.local_llm_downloader
+=========================================
+
+.. py:module:: evolving_ideas.infra.local_llm_downloader
+
+.. autoapi-nested-parse::
+
+   evolving_ideas.infra.local_llm_downloader
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   evolving_ideas.infra.local_llm_downloader.logger
+   evolving_ideas.infra.local_llm_downloader.MODEL_NAME
+   evolving_ideas.infra.local_llm_downloader.SAVE_DIRECTORY
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   evolving_ideas.infra.local_llm_downloader.LocalLLMDownloader
+
+
+Module Contents
+---------------
+
+.. py:data:: logger
+
+.. py:data:: MODEL_NAME
+   :value: 'sshleifer/tiny-gpt2'
+
+
+.. py:data:: SAVE_DIRECTORY
+   :value: './.models/tiny-gpt2'
+
+
+.. py:class:: LocalLLMDownloader(model_name: Optional[str] = MODEL_NAME, save_directory: str = SAVE_DIRECTORY)
+
+   Downloads and saves the local LLM model and tokenizer.
+
+
+   .. py:attribute:: model_name
+      :value: 'sshleifer/tiny-gpt2'
+
+
+
+   .. py:attribute:: save_directory
+      :value: './.models/tiny-gpt2'
+
+
+
+   .. py:method:: download()
+
+      Downloads the model and tokenizer, saving them to the specified directory.
+
+
+

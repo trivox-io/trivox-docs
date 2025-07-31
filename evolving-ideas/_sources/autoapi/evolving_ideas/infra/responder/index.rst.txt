@@ -15,6 +15,7 @@ Attributes
 .. autoapisummary::
 
    evolving_ideas.infra.responder.logger
+   evolving_ideas.infra.responder.LLM_BACKENDS
 
 
 Classes
@@ -25,10 +26,22 @@ Classes
    evolving_ideas.infra.responder.LLMResponder
 
 
+Functions
+---------
+
+.. autoapisummary::
+
+   evolving_ideas.infra.responder.get_llm_backend
+
+
 Module Contents
 ---------------
 
 .. py:data:: logger
+
+.. py:data:: LLM_BACKENDS
+
+.. py:function:: get_llm_backend(name: str) -> evolving_ideas.infra.llm_interface.LLMInterface
 
 .. py:class:: LLMResponder
 
@@ -36,6 +49,7 @@ Module Contents
 
 
    .. py:attribute:: llm
+      :type:  evolving_ideas.infra.llm_interface.LLMInterface
 
 
    .. py:method:: ask(prompt: str, context='You are a helpful assistant.') -> str

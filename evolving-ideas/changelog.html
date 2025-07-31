@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="🧠 Trivox – Evolving Ideas Architecture" href="architecture.html" /><link rel="prev" title="SECURITY" href="security.html" />
 
     <!-- Generated with Sphinx 7.4.7 and Furo 2024.08.06 -->
-        <title>CHANGELOG - evolving_ideas 0.1.0 documentation</title>
+        <title>CHANGELOG - evolving_ideas 0.2.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=fd3f3429" />
@@ -194,7 +194,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">evolving_ideas 0.1.0 documentation</div></a>
+      <a href="index.html"><div class="brand">evolving_ideas 0.2.0 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -218,7 +218,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
   
-  <span class="sidebar-brand-text">evolving_ideas 0.1.0 documentation</span>
+  <span class="sidebar-brand-text">evolving_ideas 0.2.0 documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -254,6 +254,7 @@
 <li class="toctree-l3"><a class="reference internal" href="autoapi/evolving_ideas/cli/index.html">evolving_ideas.cli</a></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="autoapi/evolving_ideas/common/index.html">evolving_ideas.common</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of evolving_ideas.common</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="autoapi/evolving_ideas/common/cache_store/index.html">evolving_ideas.common.cache_store</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/evolving_ideas/common/constants/index.html">evolving_ideas.common.constants</a></li>
 <li class="toctree-l4"><a class="reference internal" href="autoapi/evolving_ideas/common/logger/index.html">evolving_ideas.common.logger</a></li>
 </ul>
 </li>
@@ -273,6 +274,9 @@
 </ul>
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="autoapi/evolving_ideas/infra/index.html">evolving_ideas.infra</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of evolving_ideas.infra</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/evolving_ideas/infra/llm_interface/index.html">evolving_ideas.infra.llm_interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/evolving_ideas/infra/local_llm_client/index.html">evolving_ideas.infra.local_llm_client</a></li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/evolving_ideas/infra/local_llm_downloader/index.html">evolving_ideas.infra.local_llm_downloader</a></li>
 <li class="toctree-l4"><a class="reference internal" href="autoapi/evolving_ideas/infra/open_ai_client/index.html">evolving_ideas.infra.open_ai_client</a></li>
 <li class="toctree-l4"><a class="reference internal" href="autoapi/evolving_ideas/infra/responder/index.html">evolving_ideas.infra.responder</a></li>
 </ul>
@@ -348,9 +352,20 @@
           <section id="changelog">
 <h1>CHANGELOG<a class="headerlink" href="#changelog" title="Link to this heading">¶</a></h1>
 <section id="id1">
-<h2>[0.1.0] - 2025-07-24<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<h2>[0.2.0] - 2025-07-31<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
 <section id="added">
 <h3>Added<a class="headerlink" href="#added" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>New <code class="docutils literal notranslate"><span class="pre">settings</span></code> command with <code class="docutils literal notranslate"><span class="pre">--view</span></code> flag to show current configuration</p></li>
+<li><p>New <code class="docutils literal notranslate"><span class="pre">download-model</span></code> to download local models</p></li>
+<li><p>Support for using local models</p></li>
+</ul>
+</section>
+</section>
+<section id="id2">
+<h2>[0.1.0] - 2025-07-24<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<section id="id3">
+<h3>Added<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">add</span></code> command with classic brainstorming method</p></li>
 <li><p>Project structure &amp; CLI framework</p></li>
@@ -422,8 +437,12 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">CHANGELOG</a><ul>
-<li><a class="reference internal" href="#id1">[0.1.0] - 2025-07-24</a><ul>
+<li><a class="reference internal" href="#id1">[0.2.0] - 2025-07-31</a><ul>
 <li><a class="reference internal" href="#added">Added</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id2">[0.1.0] - 2025-07-24</a><ul>
+<li><a class="reference internal" href="#id3">Added</a></li>
 </ul>
 </li>
 </ul>
@@ -437,7 +456,7 @@
       
     </aside>
   </div>
-</div><script src="_static/documentation_options.js?v=01f34227"></script>
+</div><script src="_static/documentation_options.js?v=938c9ccc"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/furo.js?v=5fa4622c"></script>

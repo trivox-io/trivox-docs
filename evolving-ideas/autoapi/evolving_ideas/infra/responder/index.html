@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="../../../../genindex.html" /><link rel="search" title="Search" href="../../../../search.html" /><link rel="next" title="evolving_ideas.interface" href="../../interface/index.html" /><link rel="prev" title="evolving_ideas.infra.open_ai_client" href="../open_ai_client/index.html" />
 
     <!-- Generated with Sphinx 7.4.7 and Furo 2024.08.06 -->
-        <title>evolving_ideas.infra.responder - evolving_ideas 0.1.0 documentation</title>
+        <title>evolving_ideas.infra.responder - evolving_ideas 0.2.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/graphviz.css?v=fd3f3429" />
@@ -194,7 +194,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../../index.html"><div class="brand">evolving_ideas 0.1.0 documentation</div></a>
+      <a href="../../../../index.html"><div class="brand">evolving_ideas 0.2.0 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -218,7 +218,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="../../../../index.html">
   
   
-  <span class="sidebar-brand-text">evolving_ideas 0.1.0 documentation</span>
+  <span class="sidebar-brand-text">evolving_ideas 0.2.0 documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -254,6 +254,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../cli/index.html">evolving_ideas.cli</a></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../../common/index.html">evolving_ideas.common</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of evolving_ideas.common</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../common/cache_store/index.html">evolving_ideas.common.cache_store</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../common/constants/index.html">evolving_ideas.common.constants</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../common/logger/index.html">evolving_ideas.common.logger</a></li>
 </ul>
 </li>
@@ -273,6 +274,9 @@
 </ul>
 </li>
 <li class="toctree-l3 current has-children"><a class="reference internal" href="../index.html">evolving_ideas.infra</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of evolving_ideas.infra</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../llm_interface/index.html">evolving_ideas.infra.llm_interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../local_llm_client/index.html">evolving_ideas.infra.local_llm_client</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../local_llm_downloader/index.html">evolving_ideas.infra.local_llm_downloader</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../open_ai_client/index.html">evolving_ideas.infra.open_ai_client</a></li>
 <li class="toctree-l4 current current-page"><a class="current reference internal" href="#">evolving_ideas.infra.responder</a></li>
 </ul>
@@ -356,6 +360,9 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="#evolving_ideas.infra.responder.logger" title="evolving_ideas.infra.responder.logger"><code class="xref py py-obj docutils literal notranslate"><span class="pre">logger</span></code></a></p></td>
 <td><p></p></td>
 </tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#evolving_ideas.infra.responder.LLM_BACKENDS" title="evolving_ideas.infra.responder.LLM_BACKENDS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LLM_BACKENDS</span></code></a></p></td>
+<td><p></p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -372,11 +379,33 @@
 </table>
 </div>
 </section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#evolving_ideas.infra.responder.get_llm_backend" title="evolving_ideas.infra.responder.get_llm_backend"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_llm_backend</span></code></a>(...)</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 <section id="module-contents">
 <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
 <dl class="py data">
 <dt class="sig sig-object py" id="evolving_ideas.infra.responder.logger">
 <span class="sig-prename descclassname"><span class="pre">evolving_ideas.infra.responder.</span></span><span class="sig-name descname"><span class="pre">logger</span></span><a class="headerlink" href="#evolving_ideas.infra.responder.logger" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="evolving_ideas.infra.responder.LLM_BACKENDS">
+<span class="sig-prename descclassname"><span class="pre">evolving_ideas.infra.responder.</span></span><span class="sig-name descname"><span class="pre">LLM_BACKENDS</span></span><a class="headerlink" href="#evolving_ideas.infra.responder.LLM_BACKENDS" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="evolving_ideas.infra.responder.get_llm_backend">
+<span class="sig-prename descclassname"><span class="pre">evolving_ideas.infra.responder.</span></span><span class="sig-name descname"><span class="pre">get_llm_backend</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../llm_interface/index.html#evolving_ideas.infra.llm_interface.LLMInterface" title="evolving_ideas.infra.llm_interface.LLMInterface"><span class="pre">evolving_ideas.infra.llm_interface.LLMInterface</span></a></span></span><a class="headerlink" href="#evolving_ideas.infra.responder.get_llm_backend" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py class">
@@ -385,7 +414,7 @@
 <dd><p>Wraps the underlying LLM for easier substitution/testing.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="evolving_ideas.infra.responder.LLMResponder.llm">
-<span class="sig-name descname"><span class="pre">llm</span></span><a class="headerlink" href="#evolving_ideas.infra.responder.LLMResponder.llm" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">llm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../llm_interface/index.html#evolving_ideas.infra.llm_interface.LLMInterface" title="evolving_ideas.infra.llm_interface.LLMInterface"><span class="pre">evolving_ideas.infra.llm_interface.LLMInterface</span></a></em><a class="headerlink" href="#evolving_ideas.infra.responder.LLMResponder.llm" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -492,8 +521,11 @@
 <li><a class="reference internal" href="#">evolving_ideas.infra.responder</a><ul>
 <li><a class="reference internal" href="#attributes">Attributes</a></li>
 <li><a class="reference internal" href="#classes">Classes</a></li>
+<li><a class="reference internal" href="#functions">Functions</a></li>
 <li><a class="reference internal" href="#module-contents">Module Contents</a><ul>
 <li><a class="reference internal" href="#evolving_ideas.infra.responder.logger"><code class="docutils literal notranslate"><span class="pre">logger</span></code></a></li>
+<li><a class="reference internal" href="#evolving_ideas.infra.responder.LLM_BACKENDS"><code class="docutils literal notranslate"><span class="pre">LLM_BACKENDS</span></code></a></li>
+<li><a class="reference internal" href="#evolving_ideas.infra.responder.get_llm_backend"><code class="docutils literal notranslate"><span class="pre">get_llm_backend()</span></code></a></li>
 <li><a class="reference internal" href="#evolving_ideas.infra.responder.LLMResponder"><code class="docutils literal notranslate"><span class="pre">LLMResponder</span></code></a><ul>
 <li><a class="reference internal" href="#evolving_ideas.infra.responder.LLMResponder.llm"><code class="docutils literal notranslate"><span class="pre">LLMResponder.llm</span></code></a></li>
 <li><a class="reference internal" href="#evolving_ideas.infra.responder.LLMResponder.ask"><code class="docutils literal notranslate"><span class="pre">LLMResponder.ask()</span></code></a></li>
@@ -513,7 +545,7 @@
       
     </aside>
   </div>
-</div><script src="../../../../_static/documentation_options.js?v=01f34227"></script>
+</div><script src="../../../../_static/documentation_options.js?v=938c9ccc"></script>
     <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../../_static/scripts/furo.js?v=5fa4622c"></script>

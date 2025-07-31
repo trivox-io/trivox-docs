@@ -172,6 +172,9 @@ Module Contents
 
 .. py:class:: OpenAILLM(model='gpt-4.1', transport: Optional[OpenAITransport] = None, **kwargs)
 
+   Bases: :py:obj:`evolving_ideas.infra.llm_interface.LLMInterface`
+
+
    OpenAI Language Model Wrapper
 
 

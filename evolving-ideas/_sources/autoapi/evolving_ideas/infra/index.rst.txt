@@ -10,6 +10,9 @@ Submodules
 .. toctree::
    :maxdepth: 1
 
+   /autoapi/evolving_ideas/infra/llm_interface/index
+   /autoapi/evolving_ideas/infra/local_llm_client/index
+   /autoapi/evolving_ideas/infra/local_llm_downloader/index
    /autoapi/evolving_ideas/infra/open_ai_client/index
    /autoapi/evolving_ideas/infra/responder/index
 
