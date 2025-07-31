@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="evolving_ideas.common" href="../common/index.html" /><link rel="prev" title="evolving_ideas.app" href="../app/index.html" />
 
     <!-- Generated with Sphinx 7.4.7 and Furo 2024.08.06 -->
-        <title>evolving_ideas.cli - evolving_ideas 0.1.0 documentation</title>
+        <title>evolving_ideas.cli - evolving_ideas 0.2.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
@@ -194,7 +194,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../index.html"><div class="brand">evolving_ideas 0.1.0 documentation</div></a>
+      <a href="../../../index.html"><div class="brand">evolving_ideas 0.2.0 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -218,7 +218,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="../../../index.html">
   
   
-  <span class="sidebar-brand-text">evolving_ideas 0.1.0 documentation</span>
+  <span class="sidebar-brand-text">evolving_ideas 0.2.0 documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -254,6 +254,7 @@
 <li class="toctree-l3 current current-page"><a class="current reference internal" href="#">evolving_ideas.cli</a></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../common/index.html">evolving_ideas.common</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of evolving_ideas.common</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../common/cache_store/index.html">evolving_ideas.common.cache_store</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../common/constants/index.html">evolving_ideas.common.constants</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../common/logger/index.html">evolving_ideas.common.logger</a></li>
 </ul>
 </li>
@@ -273,6 +274,9 @@
 </ul>
 </li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../infra/index.html">evolving_ideas.infra</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of evolving_ideas.infra</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../infra/llm_interface/index.html">evolving_ideas.infra.llm_interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../infra/local_llm_client/index.html">evolving_ideas.infra.local_llm_client</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../infra/local_llm_downloader/index.html">evolving_ideas.infra.local_llm_downloader</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../infra/open_ai_client/index.html">evolving_ideas.infra.open_ai_client</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../infra/responder/index.html">evolving_ideas.infra.responder</a></li>
 </ul>
@@ -348,24 +352,6 @@
           <section id="module-evolving_ideas.cli">
 <span id="evolving-ideas-cli"></span><h1>evolving_ideas.cli<a class="headerlink" href="#module-evolving_ideas.cli" title="Link to this heading">¶</a></h1>
 <p>evolving_ideas.cli</p>
-<section id="attributes">
-<h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#evolving_ideas.cli.VERSION" title="evolving_ideas.cli.VERSION"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VERSION</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#evolving_ideas.cli.OPENAI_API_KEY" title="evolving_ideas.cli.OPENAI_API_KEY"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OPENAI_API_KEY</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#evolving_ideas.cli.BANNER" title="evolving_ideas.cli.BANNER"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BANNER</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
 <section id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
 <div class="table-wrapper autosummary longtable docutils container">
@@ -380,34 +366,6 @@
 </section>
 <section id="module-contents">
 <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
-<dl class="py data">
-<dt class="sig sig-object py" id="evolving_ideas.cli.VERSION">
-<span class="sig-prename descclassname"><span class="pre">evolving_ideas.cli.</span></span><span class="sig-name descname"><span class="pre">VERSION</span></span><a class="headerlink" href="#evolving_ideas.cli.VERSION" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py data">
-<dt class="sig sig-object py" id="evolving_ideas.cli.OPENAI_API_KEY">
-<span class="sig-prename descclassname"><span class="pre">evolving_ideas.cli.</span></span><span class="sig-name descname"><span class="pre">OPENAI_API_KEY</span></span><a class="headerlink" href="#evolving_ideas.cli.OPENAI_API_KEY" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py data">
-<dt class="sig sig-object py" id="evolving_ideas.cli.BANNER">
-<span class="sig-prename descclassname"><span class="pre">evolving_ideas.cli.</span></span><span class="sig-name descname"><span class="pre">BANNER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">Multiline-String</span></em><a class="headerlink" href="#evolving_ideas.cli.BANNER" title="Link to this definition">¶</a></dt>
-<dd><details><summary>Show Value</summary><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">     _____           _       _               _____    _</span>
-<span class="sd">    |  ___|         | |     (_)             |_   _|  | |</span>
-<span class="sd">    | |____   _____ | |_   ___ _ __   __ _    | |  __| | ___  __ _ ___</span>
-<span class="sd">    |  __\ \ / / _ \| \ \ / / | &#39;_ \ / _` |   | | / _` |/ _ \/ _` / __|</span>
-<span class="sd">    | |___\ V / (_) | |\ V /| | | | | (_| |  _| || (_| |  __/ (_| \__ \</span>
-<span class="sd">    \____/ \_/ \___/|_| \_/ |_|_| |_|\__, |  \___/\__,_|\___|\__,_|___/</span>
-<span class="sd">                                      __/ |</span>
-<span class="sd">                                     |___/</span>
-<span class="sd">            A CLI to capture, evolve, and expand your ideas.</span>
-<span class="sd">&quot;&quot;&quot;</span>
-</pre></div>
-</div>
-</details></dd></dl>
-
 <dl class="py function">
 <dt class="sig sig-object py" id="evolving_ideas.cli.main">
 <span class="sig-prename descclassname"><span class="pre">evolving_ideas.cli.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#evolving_ideas.cli.main" title="Link to this definition">¶</a></dt>
@@ -477,12 +435,8 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">evolving_ideas.cli</a><ul>
-<li><a class="reference internal" href="#attributes">Attributes</a></li>
 <li><a class="reference internal" href="#functions">Functions</a></li>
 <li><a class="reference internal" href="#module-contents">Module Contents</a><ul>
-<li><a class="reference internal" href="#evolving_ideas.cli.VERSION"><code class="docutils literal notranslate"><span class="pre">VERSION</span></code></a></li>
-<li><a class="reference internal" href="#evolving_ideas.cli.OPENAI_API_KEY"><code class="docutils literal notranslate"><span class="pre">OPENAI_API_KEY</span></code></a></li>
-<li><a class="reference internal" href="#evolving_ideas.cli.BANNER"><code class="docutils literal notranslate"><span class="pre">BANNER</span></code></a></li>
 <li><a class="reference internal" href="#evolving_ideas.cli.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
 </ul>
 </li>
@@ -497,7 +451,7 @@
       
     </aside>
   </div>
-</div><script src="../../../_static/documentation_options.js?v=01f34227"></script>
+</div><script src="../../../_static/documentation_options.js?v=938c9ccc"></script>
     <script src="../../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/scripts/furo.js?v=5fa4622c"></script>

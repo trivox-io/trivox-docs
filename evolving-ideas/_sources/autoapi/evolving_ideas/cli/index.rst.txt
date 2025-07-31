@@ -9,16 +9,6 @@ evolving_ideas.cli
 
 
 
-Attributes
-----------
-
-.. autoapisummary::
-
-   evolving_ideas.cli.VERSION
-   evolving_ideas.cli.OPENAI_API_KEY
-   evolving_ideas.cli.BANNER
-
-
 Functions
 ---------
 
@@ -29,37 +19,6 @@ Functions
 
 Module Contents
 ---------------
-
-.. py:data:: VERSION
-
-.. py:data:: OPENAI_API_KEY
-
-.. py:data:: BANNER
-   :value: Multiline-String
-
-   .. raw:: html
-
-      <details><summary>Show Value</summary>
-
-   .. code-block:: python
-
-      """
-           _____           _       _               _____    _                 
-          |  ___|         | |     (_)             |_   _|  | |                
-          | |____   _____ | |_   ___ _ __   __ _    | |  __| | ___  __ _ ___  
-          |  __\ \ / / _ \| \ \ / / | '_ \ / _` |   | | / _` |/ _ \/ _` / __| 
-          | |___\ V / (_) | |\ V /| | | | | (_| |  _| || (_| |  __/ (_| \__ \ 
-          \____/ \_/ \___/|_| \_/ |_|_| |_|\__, |  \___/\__,_|\___|\__,_|___/ 
-                                            __/ |                             
-                                           |___/                              
-                  A CLI to capture, evolve, and expand your ideas.
-      """
-
-   .. raw:: html
-
-      </details>
-
-
 
 .. py:function:: main()
 

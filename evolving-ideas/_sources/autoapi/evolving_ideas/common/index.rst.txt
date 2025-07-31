@@ -11,6 +11,7 @@ Submodules
    :maxdepth: 1
 
    /autoapi/evolving_ideas/common/cache_store/index
+   /autoapi/evolving_ideas/common/constants/index
    /autoapi/evolving_ideas/common/logger/index
 
 
